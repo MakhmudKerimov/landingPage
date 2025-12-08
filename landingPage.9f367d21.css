@@ -181,11 +181,11 @@ button {
 }
 
 .menu__call-to-order {
+  width: fit-content;
   color: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-bottom: 1px solid #1b2129;
-  width: fit-content;
   padding-bottom: 3px;
   font-size: 16px;
   text-decoration: none;
@@ -359,7 +359,7 @@ button {
 .recommended__products {
   --columns: 2;
   grid-template-columns: repeat(var(--columns), 1fr);
-  gap: 40px 20px;
+  column-gap: 20px;
   display: grid;
 }
 
@@ -374,6 +374,10 @@ button {
   .recommended__products {
     --columns: 12;
   }
+}
+
+.recommended__products {
+  row-gap: 40px;
 }
 
 .recommended__product {
@@ -661,12 +665,15 @@ button {
 .contact-us__contact {
   letter-spacing: .15px;
   margin-bottom: 24px;
-  transition: color .3s;
   display: block;
 }
 
 .contact-us__contact:last-child {
   margin-bottom: 0;
+}
+
+.contact-us__contact {
+  transition: color .3s;
 }
 
 .contact-us__contact:hover {
@@ -740,4 +747,4 @@ button {
     padding-inline: 120px;
   }
 }
-/*# sourceMappingURL=index.971c2ea4.css.map */
+/*# sourceMappingURL=landingPage.9f367d21.css.map */
